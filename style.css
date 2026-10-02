@@ -1,0 +1,223 @@
+/* General Resets and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333333;
+    background-color: #FAF6F0;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #3C2A21;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #D5CEA3;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #E5BA73;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('coffee1.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 1rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #E5BA73;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #E5BA73;
+    color: #1A120B;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #C59B53;
+}
+
+/* Common Section Styling */
+section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #3C2A21;
+    border-bottom: 3px solid #E5BA73;
+    display: inline-block;
+    width: fit-content;
+}
+
+.about {
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #555555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Menu Grid Section */
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 1rem 0 0.5rem;
+    color: #3C2A21;
+}
+
+.card p {
+    padding: 0 1rem;
+    font-size: 0.95rem;
+    color: #666666;
+}
+
+/* Best Sellers Section */
+.bestsellers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bestseller-item {
+    background-color: #EAE3D2;
+    padding: 1.5rem;
+    border-left: 5px solid #3C2A21;
+    border-radius: 4px;
+}
+
+.bestseller-item h3 {
+    color: #3C2A21;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Section */
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.info-block {
+    background: #FFFFFF;
+    padding: 2rem;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.info-block h3 {
+    color: #3C2A21;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.info-block p {
+    color: #555555;
+}
+
+/* Footer */
+footer {
+    background-color: #1A120B;
+    color: #AAAAAA;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+}
